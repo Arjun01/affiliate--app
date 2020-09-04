@@ -1,1 +1,3 @@
-<p>The affiliate link component.</p>
+<input type="text" [value]="newLink"  #link readonly>
+<button (click)="onCopyLink(link)">Copy Link</button>
+<!-- <button [cdkCopyToClipboard]="link">Copy Link</button> -->

@@ -1,3 +1,22 @@
-<input type="text" [value]="newLink"  #link readonly>
-<button (click)="onCopyLink(link)">Copy Link</button>
+
+<mat-card>
+<mat-form-field >
+  <mat-label>Share your invite link.</mat-label>
+  <input
+  matInput
+  type="text"
+  [value]="newLink"
+   #link
+   readonly>
+   <button  mat-stroked-button matSuffix color="accent" (click)="onCopyLink(link)">Copy Link</button>
+
+
+
+   <mat-hint>Get paid to share the below link with your friends and followers in just 1 click.</mat-hint>
+
+ </mat-form-field>
+ </mat-card>
+
+
+
 <!-- <button [cdkCopyToClipboard]="link">Copy Link</button> -->

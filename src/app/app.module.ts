@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AffiliateLinkComponent } from './affiliates/affiliate-link/affiliate-link.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AffiliateLinkComponent
   ],
   imports: [
     BrowserModule,
